@@ -52,6 +52,7 @@ def main():
             add_task(tasks)
         elif choice == "3":
             print("Goodbye!")
+            print("Have a good day!")
             break
         else:
             print("Please enter 1, 2, or 3.")
