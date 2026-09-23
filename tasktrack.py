@@ -18,8 +18,12 @@ def add_task(tasks):
     """Prompt the user for a task and add it to the task list."""
     
     task = input("Enter a new Task: ")
-    tasks.append(task)
-    print("Task added successfully")
+    task = task.strip()
+    if(task != ""):
+        tasks.append(task)
+        print("Task added successfully")
+    else:
+        print("A task cannot be empty")
 
 
 def view_tasks(tasks):
@@ -45,7 +49,7 @@ def load_tasks(filename):
             for line in file:
                 task = line.strip()
 
-                
+
                 if task != "":
                     tasks.append(task)
 
