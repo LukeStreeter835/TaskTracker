@@ -13,6 +13,11 @@ keep a list of tasks the user needs to do. It does this by letting the user add 
 
 -Python 3
 
+## Version Control
+
+-This project uses git locallhy and github as an online repository. Please make sure when running or
+working on the program that you are aware what version of the program you are on.
+
 ## Project Files
 
 -`tasktrack.py` - Main program that user use to add, view, and save tasks
