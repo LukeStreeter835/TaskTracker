@@ -16,7 +16,7 @@ def display_menu():
 
 def add_task(tasks):
     """Prompt the user for a task and add it to the task list."""
-    #TODO: Complete this function in Step 8.
+    
     task = input("Enter a new Task: ")
     tasks.append(task)
     print("Task added successfully")
@@ -45,16 +45,25 @@ def load_tasks(filename):
             for line in file:
                 task = line.strip()
 
-                #TODO: Ignore blank lines.
+                
                 if task != "":
                     tasks.append(task)
 
-                #TODO: Add each non-empty task to the tasks list.
+                
     except FileNotFoundError:
         # A new project may not have a task file yet.
         return []
 
     return tasks
+
+def save_tasks(tasks, filename):
+    """Save all tasks to a text file."""
+    with open(filename, "w") as file:
+        
+        for i in range(len(tasks)):
+            
+            file.write(f"{tasks[i]}\n")
+
 
 
 def main():
@@ -69,6 +78,7 @@ def main():
             view_tasks(tasks)
         elif choice == "2":
             add_task(tasks)
+            save_tasks(tasks, TASK_FILE)
         elif choice == "3":
             print("Goodbye!")
             break
