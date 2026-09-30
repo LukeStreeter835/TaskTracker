@@ -8,6 +8,7 @@ keep a list of tasks the user needs to do. It does this by letting the user add 
 -Allows useres to store tasks in program
 -Allows users to see tasks they added
 -Will save all tasks added onto tasks text file
+-Allows users to remove tasks from list and file
 
 ## Requirements
 
@@ -39,7 +40,7 @@ python tasktrack.py // run the program
 Booting up the program I wish to see all my current tasks i have saved. So I type "1" into the terminal.
 After viewing tasks, Im brought back to main menu. Now I would like to add a task, so I type "2". Now I'm prompted to write in the task I'd like to add, so I type "Clean house" and hit enter. Program tells me it was added
 and I'm taken back to the main menu. Now I'd like to see my new task on the task list, so I type "1" to see
-that my new tasks is automatically added into the list with the other tasks. Afterwards, I'm taken back to the main menu and now I wish to close the program so I type "3". The program tells me "Goodbye!" and ends. 
+that my new tasks is automatically added into the list with the other tasks. Later on, I complete the first task and wish to remove it from the list. So I press "3", and am shwon the list of current tasks and prompted to remove one of them. I press "1" and the program removes the task from the file and the list and tells me that the 1st task was successfully removed. Afterwards, I'm taken back to the main menu and now I wish to close the program so I type "4". The program tells me "Goodbye!" and ends. 
 ```
 
 
